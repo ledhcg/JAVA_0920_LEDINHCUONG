@@ -1,13 +1,13 @@
 package app.Prak1;
 import java.lang.System;
-public class testdog {
+public class TestDog {
     public static void main(final String[] args) {
-        final dog d2 = new dog("Ga", "ThanhHoa", "Alex", "Black", 4);
-        final dog d1 = new dog("Cho", "Moscow", "Truong", "White", 2);
-        final dog d3 = new dog("Meo", "HaNoi", "Cuong", "Red", 1);
+        final Dog d2 = new Dog("BosTe", "ThanhHoa", "Alex", "Black", 4);
+        final Dog d1 = new Dog("Yafe", "Moscow", "Truong", "White", 2);
+        final Dog d3 = new Dog("Solac", "HaNoi", "Cuong", "Red", 1);
         System.out.println(d1);
-        d1.intoHumanAge();
-        d2.intoHumanAge();
-        d3.intoHumanAge();
+        d1.infoBoss();
+        d2.infoBoss();
+        d3.infoBoss();
     }
 }

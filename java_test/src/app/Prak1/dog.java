@@ -1,6 +1,6 @@
 package app.Prak1;
 import java.lang.System;
-public class dog {
+public class Dog {
 
     private String name;
     private String city;
@@ -8,7 +8,7 @@ public class dog {
     private String color;
     private int age;
 
-    public dog (String name, String city, String boss, String color, int age){
+    public Dog (String name, String city, String boss, String color, int age){
         this.name = name;
         this.city = city;
         this.boss = boss;
@@ -60,11 +60,11 @@ public class dog {
         return this.name+", City: "+this.city+", Boss: "+this.boss+", Color: "+this.color+", Age: "+this.age;
     }
 
-    public void intoHumanAge(){
-        System.out.println(name+"'s age in human years is "+age*7+" years.");
+    public void infoBoss(){
+        System.out.println(name+"'s boss is "+boss+" and they live in "+city+".");
     }
 
-    public dog(){
+    public Dog(){
         name = "Ga";
         city = "Moscow";
         boss = "Alex";
