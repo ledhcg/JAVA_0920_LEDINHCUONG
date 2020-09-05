@@ -1,4 +1,4 @@
-package app;
+package app.Prak1;
 import java.lang.System;
 public class dog {
 
