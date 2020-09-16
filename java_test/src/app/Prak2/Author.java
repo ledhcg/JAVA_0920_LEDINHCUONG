@@ -42,6 +42,6 @@ public class Author{
     public Author(){
         name = "Alex Sancho";
         email = "sancho@gmail.com";
-        gender = "M";
+        gender = 'M';
     }
 }
