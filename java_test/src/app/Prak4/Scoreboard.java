@@ -1,7 +1,9 @@
 package app.Prak4;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+
 public class Scoreboard extends JFrame {
  
     private static final long serialVersionUID = 1L;
@@ -12,12 +14,21 @@ public class Scoreboard extends JFrame {
     JLabel labelResult;
     JLabel labelLastScores;
     JLabel labelWinner;
+    JLabel logo1;
+    JLabel logo2;
+    private ImageIcon ACMilanLogo;
+    private ImageIcon RealMadridLogo;
     Font  f1  = new Font(Font.SERIF, Font.PLAIN,  15);
     Font  f2  = new Font(Font.DIALOG,  Font.BOLD, 15);
     public Scoreboard() {
         super("Scoreboard");
-        setLayout(new GridLayout(3, 2));
+        setLayout(new GridLayout(2, 4));
         
+        ACMilanLogo = new ImageIcon(getClass().getResource("acm.png"));
+        logo1 = new JLabel(ACMilanLogo);
+        logo1.setSize(30, 30);
+        add(logo1);
+
         buttonACMilan = new JButton("AC Milan");
         add(buttonACMilan);
         buttonACMilan.addMouseListener(new ACMilanListener());
@@ -25,12 +36,18 @@ public class Scoreboard extends JFrame {
         buttonACMilan.setForeground(Color.BLACK);
         buttonACMilan.setFont(f2);
 
+
         buttonRealMadrid = new JButton("Real Madrid");
         add(buttonRealMadrid);
         buttonRealMadrid.addMouseListener(new RealMadridListener());
         buttonRealMadrid.setBackground(Color.WHITE);
         buttonRealMadrid.setForeground(Color.BLACK);
         buttonRealMadrid.setFont(f2);
+
+        RealMadridLogo = new ImageIcon(getClass().getResource("rm.png"));
+        logo2 = new JLabel(RealMadridLogo);
+        logo2.setSize(30, 30);
+        add(logo2);
 
         labelResult = new JLabel("Result: 0 x 0");
         add(labelResult);
@@ -52,7 +69,6 @@ public class Scoreboard extends JFrame {
             labelResult.setText(String.format("Result: %d x %d", scoreOfACMilan, scoreOfRealMadrid));
             labelLastScores.setText(String.format("Last Scores: AC Milan"));
 
-            // check winner
             if (scoreOfACMilan > scoreOfRealMadrid) {
                 labelWinner.setText(String.format("Winner: AC Milan"));
             } else if (scoreOfACMilan < scoreOfRealMadrid) {
@@ -84,7 +100,7 @@ public class Scoreboard extends JFrame {
         Scoreboard sb = new Scoreboard();
         sb.setVisible(true);
         sb.setLocationRelativeTo(null);
-        sb.setSize(400, 200);
+        sb.setSize(800, 200);
         sb.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
