@@ -1,5 +1,5 @@
 package app.Prak2;
-import java.lang.System;
+
 public class Author{
     private String name;
     private String email;
