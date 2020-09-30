@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestBall<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak1.TestBall",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestBook<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak1.TestBook",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestDog<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak1.TestDog",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestAuthor<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak2.TestAuthor",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestBall<java_test>(1)",
+            "request": "launch",
+            "mainClass": "app.Prak2.TestBall",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestMovable<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak3.TestMovable",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestShape<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak3.TestShape",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Scoreboard<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak4.Scoreboard",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise10<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak5.Exercise10",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise11<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak5.Exercise11",
+            "projectName": "java_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise9<java_test>",
+            "request": "launch",
+            "mainClass": "app.Prak5.Exercise9",
+            "projectName": "java_test"
+        }
+    ]
+}
