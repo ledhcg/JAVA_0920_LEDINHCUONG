@@ -28,6 +28,6 @@ public class Exercise11 {
         }
     }
     public static void main(String[] args) {
-        System.out.println(recursion()); 
+        System.out.println("Result: " + recursion()); 
     }
 }
