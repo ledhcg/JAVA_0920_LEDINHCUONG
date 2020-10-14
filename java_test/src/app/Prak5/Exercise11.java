@@ -9,20 +9,25 @@ public class Exercise11 {
         if (n == 1) {
             int m = input.nextInt();
             if (m == 1) {
+                input.close();
                 return recursion() + n + m;
             } else {
                 int k = input.nextInt();
                 if (k == 1) {
+                    input.close();
                     return recursion() + n + m + k;
                 } else {
+                    input.close();
                     return n + m + k;
                 }
             }
         } else {
             int m = input.nextInt();
             if (m == 1) {
+                input.close();
                 return recursion() + n + m;
             } else {
+                input.close();
                 return n + m;
             }
         }
